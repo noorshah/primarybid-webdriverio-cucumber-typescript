@@ -27,6 +27,7 @@ Then('I should be able to see FAQS about Primary Bid', function () {
 
 Then('I should be able to navigate to News page', function () {
     homePage.news.click()
+    expect(browser).toHaveTitle('PrimaryBid | News')
 })
 
 Then('I should be able to see latest news about Primary Bid', function () {
