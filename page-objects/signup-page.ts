@@ -5,6 +5,8 @@ class SignUpPage {
     get password(){return $('input[name=password]')}
     get repeatPassword(){ return $('input[name=confirmPassword]')}
     get signUp(){return $('button[type=submit]')}
+    get emailError(){ return $('(//span[contains(@class,"error")])[1]')}
+    get passwordError(){return $('(//span[contains(@class,"error")])[2]')}
 
     signUpToPrimaryBid(){
         const password=this.randomString()

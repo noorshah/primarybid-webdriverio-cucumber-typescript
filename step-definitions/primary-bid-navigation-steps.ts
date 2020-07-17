@@ -44,3 +44,9 @@ Then('I should be able to sign up to Primary Bid', function () {
     expect(signUpPage.signUpHeader).toHaveText('Sign up')
     signUpPage.signUpToPrimaryBid()
 })
+
+Then('I should be able to filter All content by webinar', function () {
+    newsPage.filterContentbyWebinar()
+    expect(newsPage.allContentNewsItems).toHaveAttributeContaining('href','/webinar/')
+    expect(newsPage.allContentNewsItems).toHaveTextContaining('Webinar')
+})

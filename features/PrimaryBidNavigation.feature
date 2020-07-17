@@ -1,4 +1,4 @@
-Feature: Primary bid navigation
+Feature: Primary Bid navigation
 
     Primary Bid navigation
 
