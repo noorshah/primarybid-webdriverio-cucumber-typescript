@@ -14,6 +14,10 @@ To run the tests do
 
 In the above command the username, password or url could be for your local or pre prod environment.
 
+Once the test suite has run you can generate an html report as well by running the command
+
+`` npm run report``
+
 The project consists of a features/ folder which has all the cucumber .feature files.
 
 The step-definitions/ folder has corresponding step definitions for each feature file.
