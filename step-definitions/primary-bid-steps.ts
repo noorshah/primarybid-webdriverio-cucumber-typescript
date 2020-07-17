@@ -3,6 +3,7 @@ import {homePage} from '../page-objects/home-page'
 import {aboutUsPage} from '../page-objects/abouts-us-page'
 import {faqsPage} from '../page-objects/faqs-page'
 import {username,password,url} from '../support/environment'
+import { newsPage } from '../page-objects/news-page';
 
 Given('I am on Primary Bid home page', function () {
     browser.url(`https://${username}:${password}@${url}`)
@@ -31,7 +32,9 @@ Then('I should be able to navigate to News page', function () {
 })
 
 Then('I should be able to see latest news about Primary Bid', function () {
-
+    expect(newsPage.newsPageHeaders).toBeDisplayed()
+    expect(newsPage.newsPageHeaders).toHaveTextContaining('Featured Content')
+    expect(newsPage.newsPageItems).toBeClickable()
 })
 
 Then('I should be able to sign up to Primary Bid', function () {
