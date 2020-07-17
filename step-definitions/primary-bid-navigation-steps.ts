@@ -1,4 +1,4 @@
-import {Given, When, Then} from 'cucumber'
+import {Given,Then} from 'cucumber'
 import {homePage} from '../page-objects/home-page'
 import {aboutUsPage} from '../page-objects/abouts-us-page'
 import {faqsPage} from '../page-objects/faqs-page'

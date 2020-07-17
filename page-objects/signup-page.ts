@@ -14,7 +14,7 @@ class SignUpPage {
         this.signUp.click()
     }
 
-    randomString(){
+    private randomString(){
         return Math.random().toString(36).substring(2, 15)
     }
 

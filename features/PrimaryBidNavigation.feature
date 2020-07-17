@@ -15,7 +15,6 @@ Feature: Primary bid functionality
         Given I am on Primary Bid home page 
         Then I should be able to navigate to News page
         And I should be able to see latest news about Primary Bid
+        And I should be able to filter All content by webinar
 
-    Scenario: Sign up to Primary Bid
-        Given I am on Primary Bid home page
-        Then I should be able to sign up to Primary Bid
+    

@@ -50,7 +50,7 @@ exports.config = {
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
         // grid with only 5 firefox instances available you can make sure that not more than
         // 5 instances get started at a time.
-        maxInstances: 5,
+        maxInstances: 1,
         //
         browserName: 'chrome',
         // If outputDir is provided WebdriverIO can capture driver session logs
@@ -234,7 +234,9 @@ exports.config = {
      * Runs after a Cucumber scenario
      */
     afterScenario: function (uri, feature, scenario, result, sourceLocation, context) {
-        
+       
+       if(result['status']=='failed')
+       {browser.saveScreenshot('./screenshots/'+scenario['name']+'.png')}
     },
     /**
      * Runs after a Cucumber feature
