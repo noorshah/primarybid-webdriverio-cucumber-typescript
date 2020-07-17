@@ -1,0 +1,1 @@
+just a text file so that CI server can write json reports in the folder

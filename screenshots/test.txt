@@ -1,0 +1,1 @@
+Just an empty file so the a CI server can write images into folder

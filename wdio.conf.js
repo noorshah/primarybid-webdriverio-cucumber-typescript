@@ -124,7 +124,13 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter.html
-    reporters: ['cucumberjs-json'],
+    reporters: [ 
+        [ 'cucumberjs-json', {
+                                jsonFolder: 'jsonReports/',
+                                language: 'en',
+                                },
+        ],
+],
 
 
     //
@@ -236,7 +242,10 @@ exports.config = {
     afterScenario: function (uri, feature, scenario, result, sourceLocation, context) {
        
        if(result['status']=='failed')
-       {browser.saveScreenshot('./screenshots/'+scenario['name']+'.png')}
+       {
+        console.log(browser.getUrl())   
+        browser.saveScreenshot('./screenshots/'+scenario['name']+'.png')
+        }
     },
     /**
      * Runs after a Cucumber feature
