@@ -1,6 +1,6 @@
-Feature: Primary bid functionality
+Feature: Primary bid navigation
 
-    Primary Bid functionality
+    Primary Bid navigation
 
     Scenario: Information about Primary Bid
         Given I am on Primary Bid home page
