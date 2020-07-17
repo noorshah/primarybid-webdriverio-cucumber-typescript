@@ -234,7 +234,7 @@ exports.config = {
      * Runs after a Cucumber scenario
      */
     afterScenario: function (uri, feature, scenario, result, sourceLocation, context) {
-        console.log(feature.name)
+        
     },
     /**
      * Runs after a Cucumber feature

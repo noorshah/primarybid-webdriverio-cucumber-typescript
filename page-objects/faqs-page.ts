@@ -1,4 +1,4 @@
-class FAQsPage{
+class FAQsPage {
 
 get faqsHeading(){return $('(//h1)[2]')}
 }
