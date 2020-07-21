@@ -37,3 +37,5 @@ This project is using the Matcher options that come with WebdriverIO for better 
 
 If any questions while running the tests or any blocks please let me know through the comments section
 
+Note: The node version installed on the machine where this project was done was 12 but it can also be run against node version 10
+
