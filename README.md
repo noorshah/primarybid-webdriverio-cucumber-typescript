@@ -10,7 +10,7 @@ To insall the node packages do the following.
 
 To run the tests do 
 
-`` USER=${username} PASSWORD=${password} URL=${password} npm run test``
+`` USER=${username} PASSWORD=${password} URL=${url} npm run test``
 
 In the above command the username, password or url could be for your local or pre prod environment.
 
